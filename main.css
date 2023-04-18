@@ -1,0 +1,10 @@
+.container {
+  display: grid;
+  flex: 1;
+  flex-direction: column;
+  grid-template-columns: repeat(1fr, 2);
+}
+
+.child {
+  flex: 0.5;
+}
