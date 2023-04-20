@@ -13,6 +13,7 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 
     <link
       rel="stylesheet"
@@ -25,11 +26,18 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css" />
 
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 
     <link rel="stylesheet" href="./main.css" />
@@ -133,12 +141,34 @@
             </p>
           </div>
 
+          <!-- Mihir Mesia (2. Grid Map) -->
+          <div class="viz">
+            <div class="idiom">
+              <div id="observablehq-swatches-63bdcf3c"></div>
+              <div id="observablehq-withColor2-63bdcf3c"></div>
+            </div>
+
+            <p class="step">
+              Adults with serious thoughts of suicide
+            </p>
+          </div>
+
+          <!-- Mihir Mesia (3. Grid Map) -->
+          <div class="viz">
+            <div class="idiom">
+              <div id="observablehq-swatches2-e801ce5c"></div>
+              <div id="observablehq-withColor4-e801ce5c"></div>
+            </div>
+
+            <p class="step">
+              Adults with mental illness who where untreated
+            </p>
+          </div>
           <!-- Harshit Gajjar (2. Node Link) -->
           <div class="viz">
             <div class="idiom">
               <div id="observablehq-key-a2297878"></div>
               <div id="observablehq-link_node-a2297878"></div>
-              <div id="observablehq-donut_chart-df6600e6"></div>
             </div>
 
             <p class="step">
@@ -161,6 +191,27 @@
             </p>
           </div>
 
+          <!-- Mihir Mesia (6. Donut Chart) -->
+          <div class="viz">
+            <div class="idiom">
+              <div id="observablehq-donut_chart-3059fe91"></div>
+            </div>
+
+            <p class="step">
+              Adults with mental illness who where untreated
+            </p>
+          </div>
+
+           <!-- Mihir Mesia (7. Males vs Females Methods) -->
+           <div class="viz">
+            <div class="idiom">
+              <div id="observablehq-male_method_charts-304486f5"></div>
+            </div>
+
+            <p class="step">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur qui eligendi repudiandae veniam exercitationem consequatur eum corporis temporibus placeat, vel velit veritatis at mollitia voluptatem numquam? Consectetur, iusto corporis?
+            </p>
+          </div>
           <!-- Harshit Gajjar (4. Heatmap) -->
           <div class="viz">
             <div class="idiom">
@@ -175,6 +226,43 @@
               dolore. Exercitationem, aut.
             </p>
           </div>
+
+           <!-- Mihir Mesia (9. Correlation Graph) -->
+           <div class="viz">
+            <div class="idiom">
+              <div id="observablehq-guns_suicide_chart-331d15ff"></div>
+            </div>
+
+            <p class="step">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur qui eligendi repudiandae veniam exercitationem consequatur eum corporis temporibus placeat, vel velit veritatis at mollitia voluptatem numquam? Consectetur, iusto corporis?
+            </p>
+          </div>
+
+          <!-- Mihir Mesia (10.1 Female Guns homicide vs suicide rate) -->
+          <div class="viz">
+            <div class="idiom">
+              <div id="observablehq-swatch1-c35342ca"></div>
+              <div id="observablehq-group_bar_chart-c35342ca"></div>
+            </div>
+
+            <p class="step">
+              Female Guns homicide vs suicide rate
+            </p>
+          </div>
+
+           <!-- Mihir Mesia (10.2 Male Guns homicide vs suicide rate) -->
+           <div class="viz">
+            <div class="idiom">
+              <div id="observablehq-swatch1-c8ccf40f"></div>
+<div id="observablehq-male_group_bar_chart-c8ccf40f"></div>
+            </div>
+
+            <p class="step">
+              Male Guns homicide vs suicide rate
+            </p>
+          </div>
+
+
           <!-- Harshit Gajjar (5. Grid map) -->
           <div class="viz">
             <div class="idiom">
@@ -281,9 +369,56 @@
       import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
       import define from "https://api.observablehq.com/d/1d7a4eaf6f905a2f.js?v=3";
       new Runtime().module(define, name => {
-        if (name === "donut_chart") return new Inspector(document.querySelector("#observablehq-donut_chart-df6600e6"));
+        if (name === "donut_chart") return new Inspector(document.querySelector("#observablehq-donut_chart-3059fe91"));
       });
       </script>
+      
+      <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+        import define from "https://api.observablehq.com/d/7d903fac1bdd53c4@470.js?v=3";
+        new Runtime().module(define, name => {
+          if (name === "swatches") return new Inspector(document.querySelector("#observablehq-swatches-63bdcf3c"));
+          if (name === "withColor2") return new Inspector(document.querySelector("#observablehq-withColor2-63bdcf3c"));
+        });
+        </script>
+        <script type="module">
+          import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+          import define from "https://api.observablehq.com/d/7d903fac1bdd53c4@471.js?v=3";
+          new Runtime().module(define, name => {
+            if (name === "swatches2") return new Inspector(document.querySelector("#observablehq-swatches2-e801ce5c"));
+            if (name === "withColor4") return new Inspector(document.querySelector("#observablehq-withColor4-e801ce5c"));
+          });
+          </script>
+          <script type="module">
+            import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+            import define from "https://api.observablehq.com/d/1d7a4eaf6f905a2f.js?v=3";
+            new Runtime().module(define, name => {
+              if (name === "male_method_charts") return new Inspector(document.querySelector("#observablehq-male_method_charts-304486f5"));
+            });
+            </script>
+            <script type="module">
+              import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+              import define from "https://api.observablehq.com/d/1d7a4eaf6f905a2f.js?v=3";
+              new Runtime().module(define, name => {
+                if (name === "guns_suicide_chart") return new Inspector(document.querySelector("#observablehq-guns_suicide_chart-331d15ff"));
+              });
+              </script>
+              <script type="module">
+                import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+                import define from "https://api.observablehq.com/d/1d7a4eaf6f905a2f@433.js?v=3";
+                new Runtime().module(define, name => {
+                  if (name === "swatch1") return new Inspector(document.querySelector("#observablehq-swatch1-c35342ca"));
+                  if (name === "group_bar_chart") return new Inspector(document.querySelector("#observablehq-group_bar_chart-c35342ca"));
+                });
+                </script>
+                <script type="module">
+                  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+                  import define from "https://api.observablehq.com/d/1d7a4eaf6f905a2f@433.js?v=3";
+                  new Runtime().module(define, name => {
+                    if (name === "swatch1") return new Inspector(document.querySelector("#observablehq-swatch1-c8ccf40f"));
+                    if (name === "male_group_bar_chart") return new Inspector(document.querySelector("#observablehq-male_group_bar_chart-c8ccf40f"));
+                  });
+                  </script>
       
   </body>
 </html>
