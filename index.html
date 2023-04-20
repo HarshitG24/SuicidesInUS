@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css" />
@@ -105,6 +118,7 @@
       <h2>Here comes my viz</h2>
       <div class="holder">
         <!-- <svg id="chart"></svg> -->
+        <!-- Harshit Gajjar (1. Line chart) -->
         <div class="steps">
           <div class="viz">
             <div class="idiom" id="observablehq-suicide_trend-5846202f"></div>
@@ -116,6 +130,8 @@
               dolore. Exercitationem, aut.
             </p>
           </div>
+
+          <!-- Harshit Gajjar (2. Node Link) -->
           <div class="viz">
             <div class="idiom">
               <div id="observablehq-key-a2297878"></div>
@@ -129,47 +145,46 @@
               dolore. Exercitationem, aut.
             </p>
           </div>
-          <div class="step">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
-            soluta, blanditiis nihil eos molestias amet magnam officia tempora
-            eligendi pariatur quia cumque beatae ad voluptatem, sunt nobis
-            dolore. Exercitationem, aut.
+
+          <!-- Harshit Gajjar (3. Suicides by races) -->
+          <div class="viz">
+            <div class="idiom" id="observablehq-race_graph-71efc9aa"></div>
+
+            <p class="step">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+              soluta, blanditiis nihil eos molestias amet magnam officia tempora
+              eligendi pariatur quia cumque beatae ad voluptatem, sunt nobis
+              dolore. Exercitationem, aut.
+            </p>
           </div>
-          <div class="step">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
-            soluta, blanditiis nihil eos molestias amet magnam officia tempora
-            eligendi pariatur quia cumque beatae ad voluptatem, sunt nobis
-            dolore. Exercitationem, aut.
+
+          <!-- Harshit Gajjar (4. Heatmap) -->
+          <div class="viz">
+            <div class="idiom">
+              <div id="observablehq-viewof-suicide_method-3b801655"></div>
+              <div id="observablehq-heatmap-3b801655"></div>
+            </div>
+
+            <p class="step">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+              soluta, blanditiis nihil eos molestias amet magnam officia tempora
+              eligendi pariatur quia cumque beatae ad voluptatem, sunt nobis
+              dolore. Exercitationem, aut.
+            </p>
           </div>
-          <div class="step">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
-            soluta, blanditiis nihil eos molestias amet magnam officia tempora
-            eligendi pariatur quia cumque beatae ad voluptatem, sunt nobis
-            dolore. Exercitationem, aut.
-          </div>
-          <div class="step">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
-            soluta, blanditiis nihil eos molestias amet magnam officia tempora
-            eligendi pariatur quia cumque beatae ad voluptatem, sunt nobis
-            dolore. Exercitationem, aut.
-          </div>
-          <div class="step">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
-            soluta, blanditiis nihil eos molestias amet magnam officia tempora
-            eligendi pariatur quia cumque beatae ad voluptatem, sunt nobis
-            dolore. Exercitationem, aut.
-          </div>
-          <div class="step">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
-            soluta, blanditiis nihil eos molestias amet magnam officia tempora
-            eligendi pariatur quia cumque beatae ad voluptatem, sunt nobis
-            dolore. Exercitationem, aut.
-          </div>
-          <div class="step">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
-            soluta, blanditiis nihil eos molestias amet magnam officia tempora
-            eligendi pariatur quia cumque beatae ad voluptatem, sunt nobis
-            dolore. Exercitationem, aut.
+          <!-- Harshit Gajjar (5. Grid map) -->
+          <div class="viz">
+            <div class="idiom">
+              <div id="observablehq-legend-dd0e172a"></div>
+              <div id="observablehq-withColor2-dd0e172a"></div>
+            </div>
+
+            <p class="step">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+              soluta, blanditiis nihil eos molestias amet magnam officia tempora
+              eligendi pariatur quia cumque beatae ad voluptatem, sunt nobis
+              dolore. Exercitationem, aut.
+            </p>
           </div>
         </div>
       </div>
@@ -207,6 +222,55 @@
         if (name === "link_node")
           return new Inspector(
             document.querySelector("#observablehq-link_node-a2297878")
+          );
+      });
+    </script>
+    <script type="module">
+      import {
+        Runtime,
+        Inspector,
+      } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/1c2f909b3f6e37d2.js?v=3";
+      new Runtime().module(define, (name) => {
+        if (name === "race_graph")
+          return new Inspector(
+            document.querySelector("#observablehq-race_graph-71efc9aa")
+          );
+      });
+    </script>
+    <script type="module">
+      import {
+        Runtime,
+        Inspector,
+      } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/81d922fb2334ed29.js?v=3";
+      new Runtime().module(define, (name) => {
+        if (name === "viewof suicide_method")
+          return new Inspector(
+            document.querySelector(
+              "#observablehq-viewof-suicide_method-3b801655"
+            )
+          );
+        if (name === "heatmap")
+          return new Inspector(
+            document.querySelector("#observablehq-heatmap-3b801655")
+          );
+      });
+    </script>
+    <script type="module">
+      import {
+        Runtime,
+        Inspector,
+      } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/74f1ce5c78dabdce.js?v=3";
+      new Runtime().module(define, (name) => {
+        if (name === "legend")
+          return new Inspector(
+            document.querySelector("#observablehq-legend-dd0e172a")
+          );
+        if (name === "withColor2")
+          return new Inspector(
+            document.querySelector("#observablehq-withColor2-dd0e172a")
           );
       });
     </script>
