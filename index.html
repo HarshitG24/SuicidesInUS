@@ -30,6 +30,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css" />
+
     <link rel="stylesheet" href="./main.css" />
     <style>
       body {
@@ -86,31 +90,6 @@
           issue.
         </p>
       </div>
-
-      <!-- <section>
-        <div id="observablehq-suicide_trend-5846202f"></div>
-      </section> -->
-      <!-- <p>
-
-     </p>
-     <p>This timely analysis will help unravel
-      the impact of suicides across different ethnicity, gender as well as
-      highlight variations in methods used for suicide across states. By
-      examining the correlation between these factors, our visualization seeks
-      to provide an evidence-based foundation for further research, policy
-      discussions, and targeted interventions. </p> 
-      
-      
-      <p>Ultimately, our goal is to
-      contribute to the ongoing efforts to better understand and prevent
-      suicide, and to create a safer and more supportive environment for
-      individuals struggling with mental health challenges. By delving into this
-      important topic, we hope to stimulate a constructive dialogue among
-      researchers, policymakers, mental health professionals, and the general
-      public. Together, we can work towards reducing the incidence of suicide
-      and improving the well-being of individuals and communities throughout the
-      United States.</p>
-    </p> -->
     </div>
     <hr />
 
@@ -133,10 +112,7 @@
 
           <!-- Harshit Gajjar (2. Node Link) -->
           <div class="viz">
-            <div class="idiom">
-              <div id="observablehq-key-a2297878"></div>
-              <div id="observablehq-link_node-a2297878"></div>
-            </div>
+            <div class="idiom" id="observablehq-link_node-fad4bf9e"></div>
 
             <p class="step">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
@@ -213,15 +189,11 @@
         Runtime,
         Inspector,
       } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-      import define from "https://api.observablehq.com/d/8b3bb9e7326b0f3c.js?v=3";
+      import define from "https://api.observablehq.com/d/8b3bb9e7326b0f3c@920.js?v=3";
       new Runtime().module(define, (name) => {
-        if (name === "key")
-          return new Inspector(
-            document.querySelector("#observablehq-key-a2297878")
-          );
         if (name === "link_node")
           return new Inspector(
-            document.querySelector("#observablehq-link_node-a2297878")
+            document.querySelector("#observablehq-link_node-fad4bf9e")
           );
       });
     </script>
