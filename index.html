@@ -17,6 +17,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css" />
 
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+
     <link rel="stylesheet" href="./main.css" />
     <style>
       body {
@@ -120,6 +122,7 @@
             <div class="idiom">
               <div id="observablehq-key-a2297878"></div>
               <div id="observablehq-link_node-a2297878"></div>
+              <div id="observablehq-donut_chart-df6600e6"></div>
             </div>
 
             <p class="step">
@@ -210,5 +213,13 @@
           );
       });
     </script>
+    <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/1d7a4eaf6f905a2f.js?v=3";
+      new Runtime().module(define, name => {
+        if (name === "donut_chart") return new Inspector(document.querySelector("#observablehq-donut_chart-df6600e6"));
+      });
+      </script>
+      
   </body>
 </html>
