@@ -1,10 +1,62 @@
-.container {
-  display: grid;
-  flex: 1;
-  flex-direction: column;
-  grid-template-columns: repeat(1fr, 2);
+body {
+  font-family: sans-serif;
+  /* margin: 20px; */
+  font-size: 14pt;
+  /* background-color: #ffd3b0; */
 }
 
-.child {
-  flex: 0.5;
+.holder {
+  /* display: flex;
+  width: 100%; */
+}
+
+.steps {
+  /* width: 40%; */
+}
+
+#chart {
+  width: 50%;
+  margin-right: 5px;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  width: 400px;
+  height: 400px;
+}
+
+.step {
+  /* margin-top: 50%; */
+  min-height: 600px;
+  flex: 0.2;
+  width: 100vw;
+  padding-right: 10rem;
+}
+
+.landing-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+}
+
+.intro-page {
+  position: relative;
+}
+
+.intro {
+  position: absolute;
+  top: 0;
+}
+
+.viz {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  flex: 1;
+  height: auto;
+}
+
+.idiom {
+  flex: 0.8;
 }
