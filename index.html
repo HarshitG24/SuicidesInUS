@@ -8,8 +8,7 @@
 
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css"
-    />
+      href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css" />
 
     <link rel="stylesheet" href="./main.css" />
     <style>
@@ -54,8 +53,7 @@
         <img
           src="./images/bgimg.jpg"
           alt="this is the landing image"
-          class="landing-image"
-        />
+          class="landing-image" />
         <p class="intro">
           Suicide is a pressing public health concern that continues to
           devastate families and communities across the United States. With a
@@ -73,7 +71,6 @@
     <hr />
 
     <section>
-      <h2>Here comes my viz</h2>
       <div class="holder">
         <!-- <svg id="chart"></svg> -->
         <!-- Harshit Gajjar (1. Line chart) -->
@@ -311,9 +308,6 @@
         </div>
       </div>
     </section>
-    <section>
-      <h2>The End</h2>
-    </section>
     <script src="https://d3js.org/d3.v6.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
     <script src="./main.js"></script>
@@ -428,15 +422,24 @@
       });
     </script>
 
-<script type="module">
-  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-  import define from "https://api.observablehq.com/d/7d903fac1bdd53c4@476.js?v=3";
-  new Runtime().module(define, name => {
-    if (name === "swatches2") return new Inspector(document.querySelector("#observablehq-swatches2-add078cb"));
-    if (name === "withColor4") return new Inspector(document.querySelector("#observablehq-withColor4-add078cb"));
-  });
-  </script>
-  
+    <script type="module">
+      import {
+        Runtime,
+        Inspector,
+      } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/7d903fac1bdd53c4@476.js?v=3";
+      new Runtime().module(define, (name) => {
+        if (name === "swatches2")
+          return new Inspector(
+            document.querySelector("#observablehq-swatches2-add078cb")
+          );
+        if (name === "withColor4")
+          return new Inspector(
+            document.querySelector("#observablehq-withColor4-add078cb")
+          );
+      });
+    </script>
+
     <script type="module">
       import {
         Runtime,
