@@ -113,6 +113,34 @@
 
             <p class="step">Adults with mental illness who where untreated</p>
           </div>
+
+          <!-- Harshit Gajjar (4.x. Bar Chart) -->
+          <div class="viz">
+            <div class="idiom">
+              <div id="observablehq-viewof-gender-0faccf34"></div>
+              <div id="observablehq-viewof-year-0faccf34"></div>
+              <div id="observablehq-occupational_suicides-0faccf34"></div>
+            </div>
+
+            <p class="step">
+              The issue of workplace and occupational suicide rates has become
+              an increasingly important topic in recent years. Data from 2012
+              and 2015 reveals some stark gender differences in suicide rates
+              across different industries. Notably, male workers in the
+              construction and extraction industries had the highest suicide
+              rates in both years, suggesting a need for targeted prevention and
+              intervention efforts in these fields. Meanwhile, female workers in
+              the arts, design, entertainment, sports, and media industries had
+              the highest suicide rates in both years, underscoring the unique
+              challenges faced by women in these high-pressure fields. As a
+              society, we must continue to prioritize mental health and
+              wellbeing in the workplace, and work towards developing strategies
+              that support workers in all industries and address the underlying
+              factors contributing to suicide risk in different occupational
+              contexts.
+            </p>
+          </div>
+
           <!-- Harshit Gajjar (4. Node Link) -->
           <div class="viz">
             <div class="idiom">
@@ -498,6 +526,29 @@
           return new Inspector(
             document.querySelector(
               "#observablehq-male_group_bar_chart-c8ccf40f"
+            )
+          );
+      });
+    </script>
+    <script type="module">
+      import {
+        Runtime,
+        Inspector,
+      } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/26527653bdda8f57@63.js?v=3";
+      new Runtime().module(define, (name) => {
+        if (name === "viewof gender")
+          return new Inspector(
+            document.querySelector("#observablehq-viewof-gender-0faccf34")
+          );
+        if (name === "viewof year")
+          return new Inspector(
+            document.querySelector("#observablehq-viewof-year-0faccf34")
+          );
+        if (name === "occupational_suicides")
+          return new Inspector(
+            document.querySelector(
+              "#observablehq-occupational_suicides-0faccf34"
             )
           );
       });
