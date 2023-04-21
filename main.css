@@ -12,6 +12,7 @@ h1 {
 .holder {
   /* display: flex;
   width: 100%; */
+  padding-left: 3rem;
 }
 
 .steps {
