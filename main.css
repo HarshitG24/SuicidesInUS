@@ -5,6 +5,10 @@ body {
   /* background-color: #ffd3b0; */
 }
 
+h1 {
+  text-align: center;
+}
+
 .holder {
   /* display: flex;
   width: 100%; */
@@ -24,6 +28,20 @@ body {
   height: 400px;
 }
 
+.facts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: auto;
+  height: 60vh;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  right: 20%;
+  opacity: 0.8;
+}
+
 .step {
   /* margin-top: 50%; */
   min-height: 600px;
@@ -35,7 +53,8 @@ body {
 .landing-image {
   width: 100vw;
   height: 100vh;
-  object-fit:cover;
+  object-fit: cover;
+  opacity: 1;
 }
 
 .intro-page {
@@ -45,6 +64,8 @@ body {
 .intro {
   position: absolute;
   top: 0;
+  padding: 3%;
+  font-size: 1.5rem;
 }
 
 .viz {
