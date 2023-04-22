@@ -100,8 +100,8 @@
           <!-- Mihir Mesia (2. Grid Map) -->
           <div class="viz">
             <div class="idiom">
-              <div id="observablehq-swatches-e7e50f70"></div>
-              <div id="observablehq-withColor3-e7e50f70"></div>
+              <div id="observablehq-swatches-64ff084f"></div>
+              <div id="observablehq-withColor3-64ff084f"></div>
             </div>
 
             <p class="step">Adults with serious thoughts of suicide</p>
@@ -110,8 +110,8 @@
           <!-- Mihir Mesia (3. Grid Map) -->
           <div class="viz">
             <div class="idiom">
-              <div id="observablehq-swatches2-add078cb"></div>
-              <div id="observablehq-withColor4-add078cb"></div>
+              <div id="observablehq-swatches-64ff084f"></div>
+<div id="observablehq-withColor4-64ff084f"></div>
             </div>
 
             <p class="step">Adults with mental illness who where untreated</p>
@@ -410,32 +410,23 @@
       });
     </script>
 
-    <script type="module">
-      import {
-        Runtime,
-        Inspector,
-      } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-      import define from "https://api.observablehq.com/d/7d903fac1bdd53c4.js?v=3";
-      new Runtime().module(define, (name) => {
-        if (name === "swatches")
-          return new Inspector(
-            document.querySelector("#observablehq-swatches-e7e50f70")
-          );
-        if (name === "withColor3")
-          return new Inspector(
-            document.querySelector("#observablehq-withColor3-e7e50f70")
-          );
-      });
-    </script>
 
 <script type="module">
   import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-  import define from "https://api.observablehq.com/d/7d903fac1bdd53c4@476.js?v=3";
+  import define from "https://api.observablehq.com/d/7d903fac1bdd53c4@485.js?v=3";
   new Runtime().module(define, name => {
-    if (name === "swatches2") return new Inspector(document.querySelector("#observablehq-swatches2-add078cb"));
-    if (name === "withColor4") return new Inspector(document.querySelector("#observablehq-withColor4-add078cb"));
+    if (name === "swatches") return new Inspector(document.querySelector("#observablehq-swatches-64ff084f"));
+    if (name === "withColor4") return new Inspector(document.querySelector("#observablehq-withColor4-64ff084f"));
   });
   </script>
+  <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/7d903fac1bdd53c4@485.js?v=3";
+    new Runtime().module(define, name => {
+      if (name === "swatches") return new Inspector(document.querySelector("#observablehq-swatches-64ff084f"));
+      if (name === "withColor3") return new Inspector(document.querySelector("#observablehq-withColor3-64ff084f"));
+    });
+    </script>
   
     <script type="module">
       import {
