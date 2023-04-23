@@ -235,8 +235,9 @@
           <!-- Harshit Gajjar (8. Heatmap) -->
           <div class="viz">
             <div class="idiom">
-              <div id="observablehq-viewof-suicide_method-3b801655"></div>
-              <div id="observablehq-heatmap-3b801655"></div>
+              <div id="observablehq-viewof-suicide_group-10791832"></div>
+              <div id="observablehq-viewof-suicide_method-10791832"></div>
+              <div id="observablehq-heatmap-10791832"></div>
             </div>
 
             <p class="step">
@@ -389,16 +390,23 @@
       } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
       import define from "https://api.observablehq.com/d/81d922fb2334ed29.js?v=3";
       new Runtime().module(define, (name) => {
+        if (name === "viewof suicide_group")
+          return new Inspector(
+            document.querySelector(
+              "#observablehq-viewof-suicide_group-10791832"
+            )
+          );
         if (name === "viewof suicide_method")
           return new Inspector(
             document.querySelector(
-              "#observablehq-viewof-suicide_method-3b801655"
+              "#observablehq-viewof-suicide_method-10791832"
             )
           );
         if (name === "heatmap")
           return new Inspector(
-            document.querySelector("#observablehq-heatmap-3b801655")
+            document.querySelector("#observablehq-heatmap-10791832")
           );
+        return ["final_data", "all_methods"].includes(name);
       });
     </script>
     <script type="module">
