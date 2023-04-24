@@ -4,7 +4,7 @@ function handleStepEnter(response) {
   const { element, direction, index } = response;
   console.log(response);
 
-  // Get all paragraphs
+  
   const paragraphs = document.querySelectorAll(".viz-text");
   
   // Deactivate all paragraphs
