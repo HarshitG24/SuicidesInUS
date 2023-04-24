@@ -17,6 +17,7 @@ h1 {
 
 .steps {
   /* width: 40%; */
+  position:sticky
 }
 
 #chart {
@@ -43,13 +44,13 @@ h1 {
   opacity: 0.8;
 }
 
-.step {
+/* .step { */
   /* margin-top: 50%; */
-  min-height: 600px;
+  /* min-height: 600px;
   flex: 0.2;
   width: 100vw;
-  padding-right: 10rem;
-}
+  padding-right: 10rem; */
+/* } */
 
 .landing-image {
   width: 100vw;
@@ -69,7 +70,7 @@ h1 {
   font-size: 1.5rem;
 }
 
-.viz {
+/* .viz {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -77,8 +78,45 @@ h1 {
   width: 100vw;
   flex: 1;
   height: auto;
-}
+} */
 
 .idiom {
   flex: 0.8;
+  
+}
+
+.step {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.viz {
+  position: sticky;
+  top: 0;
+  width: 80%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.viz #special {
+  width: none ;
+}
+
+.text-container {
+  width: 45%;
+  padding: 0 2%;
+  box-sizing: border-box;
+}
+
+.viz-text {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.viz-text.active {
+  opacity: 1;
 }
