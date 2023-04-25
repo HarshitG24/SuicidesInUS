@@ -2,11 +2,21 @@ body {
   font-family: sans-serif;
   /* margin: 20px; */
   font-size: 14pt;
-  /* background-color: #ffd3b0; */
+  /* background-color: #212a3e; */
 }
 
 h1 {
   text-align: center;
+}
+h2 {
+  margin: 0;
+}
+
+.sub-title {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-style: italic;
+  font-size: 1rem;
 }
 
 .holder {
@@ -15,7 +25,7 @@ h1 {
   padding-left: 3rem;
 }
 
-.section{
+.section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +34,7 @@ h1 {
 
 .steps {
   /* width: 40%; */
-  position:sticky
+  position: sticky;
 }
 
 #chart {
@@ -52,18 +62,19 @@ h1 {
 }
 
 /* .step { */
-  /* margin-top: 50%; */
-  /* min-height: 600px;
+/* margin-top: 50%; */
+/* min-height: 600px;
   flex: 0.2;
   width: 100vw;
   padding-right: 10rem; */
 /* } */
 
-.step{
+.step {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 4rem;
 }
 
 .landing-image {
@@ -96,7 +107,6 @@ h1 {
 
 .idiom {
   flex: 0.8;
-  
 }
 
 /* .step {
@@ -116,17 +126,29 @@ h1 {
   background-size: cover;
 }
 .viz #special {
-  width: none ;
+  width: none;
 }
 
-.viz .active{
-  position:-webkit-sticky;
+.viz .active {
+  position: -webkit-sticky;
 }
 
 .text-container {
   /* width: 45%; */
-  padding: 0 2rem;
+  padding: 0 20%;
   box-sizing: border-box;
+}
+
+.neg {
+  color: #ff6000;
+}
+
+.pos {
+  color: #408e91;
+}
+
+.bottom-space {
+  margin-bottom: 4rem;
 }
 
 /* .viz-text {
