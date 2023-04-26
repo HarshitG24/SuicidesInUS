@@ -151,6 +151,13 @@ h2 {
   margin-bottom: 4rem;
 }
 
+.node_link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* .viz-text {
   opacity: 0;
   transition: opacity 0.3s;
