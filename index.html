@@ -124,9 +124,9 @@
           with untreated mental health condition in the year 2022
         </p>
         <div class="viz">
-          <div id="observablehq-viewof-option-0a914766"></div>
-          <div id="observablehq-swatches-0a914766"></div>
-          <div id="observablehq-withColor4-0a914766"></div>
+          <div id="observablehq-viewof-option-f29b2cc6"></div>
+<div id="observablehq-swatches-f29b2cc6"></div>
+<div id="observablehq-withColor4-f29b2cc6"></div>
         </div>
         <div class="text-container">
           <p>
@@ -381,7 +381,7 @@
       <!-- Mihir Mesia (9. Correlation Graph) -->
       <div class="step">
         <div class="viz">
-          <div id="observablehq-guns_suicide_chart-331d15ff"></div>
+          <div id="observablehq-guns_suicide_chart-d22ad187"></div>
         </div>
         <div class="text-container">
           <p class="viz-text">
@@ -620,18 +620,13 @@
       });
     </script>
     <script type="module">
-      import {
-        Runtime,
-        Inspector,
-      } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
       import define from "https://api.observablehq.com/d/1d7a4eaf6f905a2f.js?v=3";
-      new Runtime().module(define, (name) => {
-        if (name === "guns_suicide_chart")
-          return new Inspector(
-            document.querySelector("#observablehq-guns_suicide_chart-331d15ff")
-          );
+      new Runtime().module(define, name => {
+        if (name === "guns_suicide_chart") return new Inspector(document.querySelector("#observablehq-guns_suicide_chart-d22ad187"));
       });
-    </script>
+      </script>
+      
     <script type="module">
       import {
         Runtime,
@@ -738,5 +733,17 @@
         );
       });
     </script>
+
+<script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+  import define from "https://api.observablehq.com/d/2a792c5e8dc7f7e4@532.js?v=3";
+  new Runtime().module(define, name => {
+    if (name === "viewof option") return new Inspector(document.querySelector("#observablehq-viewof-option-f29b2cc6"));
+    if (name === "swatches") return new Inspector(document.querySelector("#observablehq-swatches-f29b2cc6"));
+    if (name === "withColor4") return new Inspector(document.querySelector("#observablehq-withColor4-f29b2cc6"));
+    return ["displaySparseMatrixGridMap1","displayGridMap1"].includes(name);
+  });
+  </script>
+  
   </body>
 </html>
