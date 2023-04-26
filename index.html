@@ -11,7 +11,6 @@
       href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css" />
 
     <link rel="stylesheet" href="./main.css" />
-    
   </head>
   <body>
     <div class="landing">
@@ -69,6 +68,12 @@
 
         <!-- <div class="facts"></div> -->
       </div>
+      <!-- <img
+        src="./images/arrow-down-sign-to-navigate.png"
+        alt="this is arrow"
+        class="arrow" /> -->
+      <p class="story">Continue reading story</p>
+      <div class="down-arrow"></div>
     </div>
     <hr />
 
@@ -438,7 +443,7 @@
         </div>
       </div>
 
-      <!-- Mihir Mesia (8. Correlation Graph) --> 
+      <!-- Mihir Mesia (8. Correlation Graph) -->
       <div class="step">
         <h2>Correlation of guns with suicide</h2>
         <p class="sub-title">
@@ -543,8 +548,8 @@
         </p>
         <div class="viz">
           <div id="observablehq-swatch1-f0aa0a76"></div>
-<div id="observablehq-viewof-r-f0aa0a76"></div>
-<div id="observablehq-group_bar_chart-f0aa0a76"></div>
+          <div id="observablehq-viewof-r-f0aa0a76"></div>
+          <div id="observablehq-group_bar_chart-f0aa0a76"></div>
         </div>
         <div class="text-container">
           <p class="viz-text">
@@ -739,12 +744,18 @@
       });
     </script>
     <script type="module">
-      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import {
+        Runtime,
+        Inspector,
+      } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
       import define from "https://api.observablehq.com/d/1d7a4eaf6f905a2f@507.js?v=3";
-      new Runtime().module(define, name => {
-        if (name === "donut_chart") return new Inspector(document.querySelector("#observablehq-donut_chart-ad3a513b"));
+      new Runtime().module(define, (name) => {
+        if (name === "donut_chart")
+          return new Inspector(
+            document.querySelector("#observablehq-donut_chart-ad3a513b")
+          );
       });
-      </script>
+    </script>
 
     <script type="module">
       import {
@@ -868,16 +879,27 @@
       });
     </script>
     <script type="module">
-      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import {
+        Runtime,
+        Inspector,
+      } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
       import define from "https://api.observablehq.com/d/1d7a4eaf6f905a2f@507.js?v=3";
-      new Runtime().module(define, name => {
-        if (name === "swatch1") return new Inspector(document.querySelector("#observablehq-swatch1-f0aa0a76"));
-        if (name === "viewof r") return new Inspector(document.querySelector("#observablehq-viewof-r-f0aa0a76"));
-        if (name === "group_bar_chart") return new Inspector(document.querySelector("#observablehq-group_bar_chart-f0aa0a76"));
+      new Runtime().module(define, (name) => {
+        if (name === "swatch1")
+          return new Inspector(
+            document.querySelector("#observablehq-swatch1-f0aa0a76")
+          );
+        if (name === "viewof r")
+          return new Inspector(
+            document.querySelector("#observablehq-viewof-r-f0aa0a76")
+          );
+        if (name === "group_bar_chart")
+          return new Inspector(
+            document.querySelector("#observablehq-group_bar_chart-f0aa0a76")
+          );
         return ["data_group_bar"].includes(name);
       });
-      </script>
-      
+    </script>
 
     <script type="module">
       import {
