@@ -244,3 +244,10 @@ h2 {
   color: #fff;
   left: 44%;
 }
+
+.drag {
+  text-align: center;
+  color: gray;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
