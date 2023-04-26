@@ -352,7 +352,7 @@
           2020
         </p>
         <div class="viz">
-          <div id="observablehq-donut_chart-3059fe91"></div>
+          <div id="observablehq-donut_chart-ad3a513b"></div>
         </div>
         <div class="text-container">
           <p>
@@ -540,9 +540,9 @@
           suicide.
         </p>
         <div class="viz">
-          <div id="observablehq-swatch1-937b5d05"></div>
-          <div id="observablehq-viewof-r-937b5d05"></div>
-          <div id="observablehq-group_bar_chart-937b5d05"></div>
+          <div id="observablehq-swatch1-f0aa0a76"></div>
+<div id="observablehq-viewof-r-f0aa0a76"></div>
+<div id="observablehq-group_bar_chart-f0aa0a76"></div>
         </div>
         <div class="text-container">
           <p class="viz-text">
@@ -737,18 +737,12 @@
       });
     </script>
     <script type="module">
-      import {
-        Runtime,
-        Inspector,
-      } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-      import define from "https://api.observablehq.com/d/1d7a4eaf6f905a2f.js?v=3";
-      new Runtime().module(define, (name) => {
-        if (name === "donut_chart")
-          return new Inspector(
-            document.querySelector("#observablehq-donut_chart-3059fe91")
-          );
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/1d7a4eaf6f905a2f@507.js?v=3";
+      new Runtime().module(define, name => {
+        if (name === "donut_chart") return new Inspector(document.querySelector("#observablehq-donut_chart-ad3a513b"));
       });
-    </script>
+      </script>
 
     <script type="module">
       import {
@@ -872,27 +866,16 @@
       });
     </script>
     <script type="module">
-      import {
-        Runtime,
-        Inspector,
-      } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-      import define from "https://api.observablehq.com/d/1d7a4eaf6f905a2f@448.js?v=3";
-      new Runtime().module(define, (name) => {
-        if (name === "swatch1")
-          return new Inspector(
-            document.querySelector("#observablehq-swatch1-937b5d05")
-          );
-        if (name === "viewof r")
-          return new Inspector(
-            document.querySelector("#observablehq-viewof-r-937b5d05")
-          );
-        if (name === "group_bar_chart")
-          return new Inspector(
-            document.querySelector("#observablehq-group_bar_chart-937b5d05")
-          );
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/1d7a4eaf6f905a2f@507.js?v=3";
+      new Runtime().module(define, name => {
+        if (name === "swatch1") return new Inspector(document.querySelector("#observablehq-swatch1-f0aa0a76"));
+        if (name === "viewof r") return new Inspector(document.querySelector("#observablehq-viewof-r-f0aa0a76"));
+        if (name === "group_bar_chart") return new Inspector(document.querySelector("#observablehq-group_bar_chart-f0aa0a76"));
         return ["data_group_bar"].includes(name);
       });
-    </script>
+      </script>
+      
 
     <script type="module">
       import {
